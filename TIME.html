@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./TIME.css">
+    <script src="./TIME.js?ver=1"></script>
+    <title>지금 시간은?</title>
+</head>
+
+<body onload="Clock()">
+
+    <div class="container">
+        <p id="severNow"></p>
+        <div id="time">
+            <p id="tl"></p>
+            <p id="qns"></p>
+            <p id="ch"></p>
+            <p id="alfflch"></p>
+        </div>
+        <br>
+
+        <div class="Btn">
+            <button type="button" id="cilckBtn" onclick='addList()'>CLICK!</button>
+            <button type="button" id="resetBtn" onclick='removeList()'>RESET</button>
+        </div>
+
+        <ul id="List">
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+body {
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#time {
+    font-size: 50pt;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/* time */
+
+#time p {
+    margin-left: 10pt;
+}
+
+#tl {
+    width: 200pt;
+}
+
+#alfflch {
+    width: 50pt;
+}
+
+#qns,
+#ch {
+    width: 105pt;
+}
+
+
+/* btn */
+
+button {
+    width: 100pt;
+    height: 30pt;
+    padding: 1%;
+    margin-left: 10pt;
+    margin-right: 10pt;
+    border-width: 1pt;
+}
+
+
+/* list */
+
+#List {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+#List li {
+    padding: 5pt;
+}

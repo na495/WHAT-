@@ -30,6 +30,20 @@ function Clock() {
 
 }
 
+function checkedms() {
+
+    const checkbox = document.getElementById('msonoff');
+    const checkedTrue = checkbox.checked;
+
+    if (checkedTrue == true)
+        document.getElementById('alfflch').style.display = "none";
+    else
+        document.getElementById('alfflch').style.display = "inline";
+
+}
+
+
+
 function addList() {
     let today = new Date();
 
@@ -46,6 +60,7 @@ function addList() {
     let milliseconds = today.getMilliseconds(); // 밀리초
 
     const li = document.createElement('li');
+    li.setAttribute('onclick', 'liremove()');
     li.innerHTML = (hours + minutes + seconds + milliseconds);
     document.getElementById('List').appendChild(li);
 }

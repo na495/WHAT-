@@ -10,42 +10,59 @@ body {
 }
 
 #time {
-    font-size: 50pt;
+    font-size: 30pt;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    height: 70pt;
 }
 
 
 /* time */
 
-#time p {
+#qns,
+#ch {
     margin-left: 10pt;
 }
 
-#tl {
-    width: 200pt;
-}
-
 #alfflch {
-    width: 50pt;
-}
-
-#qns,
-#ch {
-    width: 105pt;
+    width: 10pt;
+    margin-left: 10pt;
 }
 
 
 /* btn */
 
-button {
+.Btn button {
     width: 100pt;
     height: 30pt;
     padding: 1%;
     margin-left: 10pt;
     margin-right: 10pt;
     border-width: 1pt;
+}
+
+
+/* Onoff */
+
+#Onoff {
+    color: rgb(139, 139, 139);
+}
+
+input {
+    margin-top: 15pt;
+}
+
+#Onoff button {
+    margin-left: 10pt;
+    background-color: white;
+    color: rgb(139, 139, 139);
+    border-style: none;
+}
+
+#Onoff button:hover {
+    background-color: rgb(65, 65, 65);
+    color: white;
 }
 
 

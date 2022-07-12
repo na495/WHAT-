@@ -5,11 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>무언가를 적을 수 있는 것 같다.</title>
+    <script src="./MEMO.js"></script>
+    <style>
+        #textbox {
+            width: 98%;
+        }
+        
+        #btndiv {
+            text-align: center;
+            padding: 1%;
+            margin-bottom: 2%;
+        }
+    </style>
 </head>
 
-<body>
-
+<body onload="onload()" onunload="unload()">
+    <div>
+        <div id="btndiv">
+            <button class="savebtn" onclick="save()">저장</button>
+            <button class="resetbtn" onclick="reset()">초기화</button>
+        </div>
+        <form id="textdiv">
+            <textarea name="text" id="textbox" cols="30" rows="15"></textarea>
+        </form>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,121 @@
+    /* 전체 div */
+    
+    body {
+        padding: 0%;
+        margin: 0%;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        min-height: 100vh;
+    }
+    
+    #content {
+        width: 35%;
+        display: block;
+        background-color: rgb(237, 237, 237);
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #content div {
+        background-color: white;
+    }
+    /* 텍스트 */
+    
+    #text {
+        height: 120pt;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #text p {
+        font-size: 20pt;
+    }
+    
+    #text button {
+        border-radius: 3pt;
+        display: none;
+        width: 50pt;
+        height: 20pt;
+        box-shadow: none;
+        border: 0;
+        background-color: rgb(93, 214, 184);
+        color: white;
+    }
+    /* 입력 */
+    
+    #textdiv {
+        margin-top: 10pt;
+        padding: 3%;
+        padding-bottom: 4%;
+    }
+    
+    #textdiv p {
+        font-size: 5pt;
+        margin-top: 15pt;
+        margin-bottom: 5;
+        color: rgb(137, 137, 137);
+    }
+    
+    #textdiv input {
+        width: 100%;
+        height: 28pt;
+        border-radius: 5pt;
+        background-color: #f2f2f2;
+        box-shadow: none;
+        border: 0;
+    }
+    /* 채크박스 */
+    
+    #checkboxdiv {
+        margin-top: 10pt;
+    }
+    
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+        color: rgb(164, 164, 164);
+    }
+    
+    #btn button {
+        background-color: white;
+        border: none;
+        margin-right: 10pt;
+        width: 20pt;
+    }
+    
+    #checkboxdiv {
+        height: 195pt;
+        display: flex;
+        align-content: space-between;
+        flex-direction: column;
+    }
+    
+    #btndiv p {
+        font-size: 10pt;
+    }
+    
+    #btndiv {
+        padding: 5pt;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    /* 제출 */
+    
+    #done {
+        color: white;
+        width: 100%;
+        height: 30pt;
+        border-radius: 5pt;
+        box-shadow: none;
+        border: 0;
+        background-color: rgb(29, 214, 169);
+        margin-top: 55pt;
+    }

@@ -21,27 +21,10 @@ while True:
 
     time = re.findall("[0-9]+", a)  # 가져온 시-분-초를 배열하기
 
-    if(time[4] == '38' and time[5] == '20'):  # time[4] : 분, time[5] : 초
+    if(time[4] == '36' and time[5] == '59'):  # time[4] : 분, time[5] : 초
         msec = re.findall("[0-9]+", b)  # 가져온 msec 배열하기
 
-        if(int(msec[0]) >= 800):  # msec[0] : 밀리초
-
-            birthday_box = driver.find_element(
-                "id", "birthday")  # 생년월일 적을 객체 찾기
-            birthday_box.send_keys('20051023')  # 생년월일 적을 객체 찾기
-
-            btn1 = driver.find_element("id", "btn1")
-            btn1.click()
-            btn2 = driver.find_element("id", "btn2")
-            btn2.click()
-            btn3 = driver.find_element("id", "btn3")
-            btn3.click()
-
+        if(int(msec[0]) >= 950):  # msec[0] : 밀리초
             submit = driver.find_element("id", "done")
             submit.click()
-
-            a = severtime.text
-            b = severmsec.text
-            print(a + '/' + b)
-
             break

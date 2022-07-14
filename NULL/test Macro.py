@@ -25,7 +25,7 @@ severtime = driver_time.find_element(By.ID, 'time_area')  # 네이비즘 시-분
 severmsec = driver_time.find_element(By.ID, 'msec_area')  # 네이비즘 밀리초 객체
 
 link = driver.find_element(
-    By.PARTIAL_LINK_TEXT, '아무것도 없다.')  # 참여 신청 클릭, 폼으로 이동
+    By.CLASS_NAME, 'NULL')  # 참여 신청 클릭, 폼으로 이동
 link.click()
 
 while True:
@@ -34,7 +34,7 @@ while True:
 
     time = re.findall("[0-9]+", a)  # 가져온 시-분-초를 배열하기
 
-    if(time[4] == '31' and time[5] == '59'):  # time[4] : 분, time[5] : 초
+    if(time[4] == '37' and time[5] == '19'):  # time[4] : 분, time[5] : 초
         msec = re.findall("[0-9]+", b)  # 가져온 msec 배열하기
 
         if(int(msec[0]) >= 900):  # msec[0] : 밀리초

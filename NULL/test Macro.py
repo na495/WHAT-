@@ -13,7 +13,7 @@ driver_time = webdriver.Chrome(
     '/Users/nayeon/Documents/VScode_C/WHAT-/PYTHON/chromedriver')  # 서버 시간용 웹드라이버 입력
 
 # 위버스 페이지 열기
-driver.get('https://www.weverse.io/enhypen/notices/2991')  # 여기임여기
+driver.get('https://na495.github.io/WHAT-/')
 # 네이비즘 페이지 열기
 driver_time.get("https://time.navyism.com/?host=www.weverse.io#")
 
@@ -24,7 +24,8 @@ checkmsec.click()  # 네이비즘 msec까지 보기 클릭
 severtime = driver_time.find_element(By.ID, 'time_area')  # 네이비즘 시-분-초 객체
 severmsec = driver_time.find_element(By.ID, 'msec_area')  # 네이비즘 밀리초 객체
 
-link = driver.find_element(By.PARTIAL_LINK_TEXT, '참여 신청하기')  # 참여 신청 클릭, 폼으로 이동
+link = driver.find_element(
+    By.PARTIAL_LINK_TEXT, '아무것도 없다.')  # 참여 신청 클릭, 폼으로 이동
 link.click()
 
 while True:
@@ -33,13 +34,13 @@ while True:
 
     time = re.findall("[0-9]+", a)  # 가져온 시-분-초를 배열하기
 
-    if(time[4] == '59' and time[5] == '59'):  # time[4] : 분, time[5] : 초
+    if(time[4] == '31' and time[5] == '59'):  # time[4] : 분, time[5] : 초
         msec = re.findall("[0-9]+", b)  # 가져온 msec 배열하기
 
         if(int(msec[0]) >= 900):  # msec[0] : 밀리초
 
             birthday_box = driver.find_element(
-                By.ID, 'birthday')  # 생년월일 적을 객체 찾기
+                By.ID, 'requiredProperties-birthDate')  # 생년월일 적을 객체 찾기
             birthday_box.send_keys('20051023')  # 생년월일 적기
 
             btn1 = driver.find_element(By.NAME, 'terms-8744')  # 동의 버튼1 클릭

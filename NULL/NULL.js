@@ -6,24 +6,30 @@ function button1() {
     document.getElementById('1').style.color = 'rgb(29, 214, 169)';
     if (btn1 == false)
         btn1 = true;
-    else
+    else {
         btn1 = false;
+        document.getElementById('1').style.color = 'rgb(164, 164, 164)';
+    }
 }
 
 function button2() {
     document.getElementById('2').style.color = 'rgb(29, 214, 169)';
     if (btn2 == false)
         btn2 = true;
-    else
+    else {
         btn2 = false;
+        document.getElementById('2').style.color = 'rgb(164, 164, 164)';
+    }
 }
 
 function button3() {
     document.getElementById('3').style.color = 'rgb(29, 214, 169)';
     if (btn3 == false)
         btn3 = true;
-    else
+    else {
         btn3 = false;
+        document.getElementById('3').style.color = 'rgb(164, 164, 164)';
+    }
 }
 
 function done() {
@@ -55,8 +61,5 @@ function reset() {
     btn3 = false;
     document.querySelector('#result').innerHTML = '';
     document.querySelector('#reset').style.display = 'none';
-    document.getElementById('1').style.color = 'rgb(164, 164, 164)';
-    document.getElementById('2').style.color = 'rgb(164, 164, 164)';
-    document.getElementById('3').style.color = 'rgb(164, 164, 164)';
 
 }

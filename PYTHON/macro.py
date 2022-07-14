@@ -13,7 +13,7 @@ driver_time = webdriver.Chrome(
     '/Users/nayeon/Documents/VScode_C/WHAT-/PYTHON/chromedriver')  # 서버 시간용 웹드라이버 입력
 
 # 위버스 페이지 열기
-driver.get('https://www.weverse.io/enhypen/notices/2991')
+driver.get('https://www.weverse.io/enhypen/notices/2991')  # 여기임여기
 # 네이비즘 페이지 열기
 driver_time.get("https://time.navyism.com/?host=www.weverse.io#")
 

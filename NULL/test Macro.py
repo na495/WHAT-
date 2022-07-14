@@ -34,7 +34,7 @@ while True:
 
     time = re.findall("[0-9]+", a)  # 가져온 시-분-초를 배열하기
 
-    if(time[4] == '37' and time[5] == '19'):  # time[4] : 분, time[5] : 초
+    if(time[4] == '41' and time[5] == '19'):  # time[4] : 분, time[5] : 초
         msec = re.findall("[0-9]+", b)  # 가져온 msec 배열하기
 
         if(int(msec[0]) >= 900):  # msec[0] : 밀리초

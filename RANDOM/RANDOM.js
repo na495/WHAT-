@@ -328,11 +328,11 @@ var Engilsh = new Array(
     '그를 구할 방법이 없었어',
     "There was no way to save him",
     // 28
-    '내가 좋아하는 게 있어',
-    '너에게 보여주고 싶은 뭔가가 있어',
-    '네가 좋아할지도 모르는 뭔가가 있어',
-    '네가 알아야하는 게 있어',
-    '내가 물어보고 싶은 게 있어',
+    // '내가 좋아하는 게 있어',
+    // '너에게 보여주고 싶은 뭔가가 있어',
+    // '네가 좋아할지도 모르는 뭔가가 있어',
+    // '네가 알아야하는 게 있어',
+    // '내가 물어보고 싶은 게 있어',
     // // 29
     // '나 그 뉴스 봤어',
     // '나 많은 변화들을 봤어',
@@ -419,11 +419,9 @@ var Engilsh = new Array(
     "내가 떠나면 좋겠어?",
     "Do you want me to leave?",
     "내가 너희 부모님을 만나면 좋겠어?",
-    "Do you want me to meet your parents",
+    "Do you want me to meet your parents?",
     "내가 너와 시간을 보내면 좋겠어?",
     "Do you want me to spend time with you?",
-    "내가 너희 부모님을 만나면 좋겠어?",
-    "Do you want me to meet your parents",
     "내가 그와 이야기하면 좋겠어?",
     "Do you want me to talk to him?",
     // 43
@@ -458,7 +456,6 @@ var Engilsh = new Array(
 var sum = 0;
 
 function next() {
-    onoff = 0;
     document.getElementById('answer').style.color = 'black';
     document.getElementById('done').style.visibility = "hidden";
     document.getElementById('text2').style.visibility = "hidden";
@@ -482,7 +479,10 @@ function submit() {
     var answer = document.getElementById('answer').value;
     var text2 = document.getElementById('text2').innerHTML;
 
-    if (answer == text2) {
+    console.log(answer.toUpperCase());
+    console.log(text2.toUpperCase());
+
+    if (answer.toUpperCase() == text2.toUpperCase()) {
         document.getElementById('answer').style.color = 'blue';
         document.getElementById('done').style.visibility = "visible";
 
@@ -493,7 +493,6 @@ function submit() {
 }
 
 function see() {
-    let text2 = document.getElementById('text2').innerHTML;
     document.getElementById('text2').style.visibility = "visible";
 }
 

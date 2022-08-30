@@ -9,9 +9,21 @@
     <script src="./RANDOM.js"></script>
 </head>
 
-<body>
-    <button onclick="BtnClick()">BUTTON</button>
-    <p id="text"></p>
+<body onload="removeList(),BtnClick()">
+    <p id="cnt"><br></p>
+    <p id="text"><br></p>
+    <p id="text2"><br></p>
+    <div class="submit">
+        <input type="text" id="answer" size=40>
+        <button id="submit" onclick="submit()">확인</button>
+        <button id="see" onclick="see()">정답보기</button>
+        <button id="done" onclick="BtnClick()">다음</button>
+    </div>
+    <br>
+    <br>
+    <button onclick="listview()">오답목록 보기</button>
+    <ul id="list">
+    </ul>
 </body>
 
 </html>
